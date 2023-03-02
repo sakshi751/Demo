@@ -9,7 +9,7 @@ runs-on: ubuntu-latest
 steps:
 - shell: bash
 run: |
-expr 3 + 7 > math-homework.txt
+expr 3 + 7 
 - name: Upload math result for job 1
 uses: actions/upload-artifact@v1
 with:
