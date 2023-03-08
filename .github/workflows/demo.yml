@@ -14,6 +14,6 @@ jobs:
           url: 'https://githubaction.atlassian.net/rest/api/2/issue/'
           method: 'POST'
           username: 'khl.sakshi55@gmail.com'
-          password: 'ATATT3xFfGF0zEGlTruFSrY1uoi5a1wh9Jtv1YAtG8S28Dg23gIccWEJa5wPYk3Q8x1S9UDpu3es1kp6HIhiLK_DGUJ4Vyy8Q2AzT_he8RAlBvKEQhOgE5MbkQiRuG9h3Uz3qde1ocOibj7xpJelC2o2Kp9xr9Eti_PmthWiyJEoUfknPI7aH9E=1059A60F'
+          password: 'ATATT3xFfGF0fqqCt758SoVRhHrd_PFvF3mLNcWzYXOJ4_ygamgxoud1clKbDw2z5wnkKQI0Ex0YBrI1wxF0sI2BV6y7jVkWkPpbbqDpv49GRXXIcS3tD804uy_CUEqfrpoZHSuVjat-tmGKYlWGdgN_P2foXPiP0X2t3_0cG6jWB9i6Y7QH9yI=772EBAD3'
           data: '{"fields": {"project": {"id": 10000 },"summary": "Creating rest api 2 github action.",  "description": "Creating of an issue using project keys and issue type names using the REST API","issuetype": {"name": "Bug"}}}'
          
