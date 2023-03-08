@@ -9,6 +9,7 @@ jobs:
       issues: write
     steps:
       - name: Create issue using REST API
+        id: myRequest
         uses: fjogeleit/http-request-action@v1
         with:
           url: 'https://githubaction.atlassian.net/rest/api/2/issue/'
@@ -16,4 +17,6 @@ jobs:
           username: 'khl.sakshi55@gmail.com'
           password: ${{ secrets.TOKEN }}
           data: '{"fields": {"project": {"id": 10000 },"summary": "Creating rest api  github action 13.",  "description": "Creating of an issue using project keys and issue type names using the REST API","issuetype": {"name": "Bug"}}}'
-         
+      - name: Show Response
+        run: |
+         echo ${{ steps.myRequest.outputs.response }}  
