@@ -20,3 +20,7 @@ jobs:
       - name: Show Response
         run: |
          echo ${{ vars.Id }} 
+      - name: mavenExecuteStaticCodeChecks
+        uses: SAP/project-piper-action@master
+        with:
+          command: integrationArtifactDeploy
