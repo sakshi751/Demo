@@ -1,4 +1,0 @@
-steps:
-  integrationArtifactDeploy:
-    cpiApiServiceKeyCredentialsId: ${{ secrets.san_apikey }}
-    integrationFlowId: Trial_Integration_Flow
