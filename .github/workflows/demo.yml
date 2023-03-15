@@ -8,7 +8,7 @@ jobs:
     permissions:
       issues: write
     steps:
-      - name: Create issue using REST API
+      - name: Create issue using REST APi
         id: myRequest
         uses: fjogeleit/http-request-action@v1
         with:
