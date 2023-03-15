@@ -1,0 +1,4 @@
+steps:
+  integrationArtifactDeploy:
+    cpiApiServiceKeyCredentialsId: san_apikey1
+    integrationFlowId: new_flow
