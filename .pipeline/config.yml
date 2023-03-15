@@ -1,4 +1,4 @@
 steps:
   integrationArtifactDeploy:
-    cpiApiServiceKeyCredentialsId: '{"oauth": {"createdate": "2023-03-15T14:14:29.314Z","clientid": "sb-7e147a09-f449-4d33-9e7b-1280d6284a84!b14170|it!b196","url": "https://4d87638btrial.it-cpitrial03.cfapps.ap21.hana.ondemand.com","clientsecret": "6eaeaef6-0249-4f2d-88a2-fabe6c152bbd$TJ5WOJQ9UtaDqJ6PbyPZegEHsCDVV4WN51CsRWJW-gM=","tokenurl": "https://4d87638btrial.authentication.ap21.hana.ondemand.com/oauth/token"}}'
+    cpiApiServiceKeyCredentialsId: {"oauth": {"createdate": "2023-03-15T14:14:29.314Z","clientid": "sb-7e147a09-f449-4d33-9e7b-1280d6284a84!b14170|it!b196","url": "https://4d87638btrial.it-cpitrial03.cfapps.ap21.hana.ondemand.com","clientsecret": "6eaeaef6-0249-4f2d-88a2-fabe6c152bbd$TJ5WOJQ9UtaDqJ6PbyPZegEHsCDVV4WN51CsRWJW-gM=","tokenurl": "https://4d87638btrial.authentication.ap21.hana.ondemand.com/oauth/token"}}
     integrationFlowId: Trial_Integration_Flow
