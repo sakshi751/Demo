@@ -10,7 +10,10 @@ jobs:
     steps:
       - name: Create issue using REST APi
         id: myRequest
-        uses: fjogeleit/http-request-action@v1
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: fjogeleit/http-request-action@v1
         with:
           url: 'https://githubaction.atlassian.net/rest/api/2/issue/'
           method: 'POST'
