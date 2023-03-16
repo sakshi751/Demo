@@ -23,6 +23,9 @@ jobs:
       - name: Show Response
         run: |
          echo ${{ vars.Id }} 
+      - name: add node
+        uses: actions/setup-node@v1
+      - run: npm ci
       - name: mavenExecuteStaticCodeChecks
         uses: SAP/project-piper-action@master
         with:
