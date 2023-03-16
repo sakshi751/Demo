@@ -32,6 +32,8 @@ jobs:
           scope: '@sap'
       - run: npm ci
       - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: mavenExecuteStaticCodeChecks
         uses: SAP/project-piper-action@master
         with:
