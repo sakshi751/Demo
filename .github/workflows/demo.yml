@@ -24,8 +24,14 @@ jobs:
         run: |
          echo ${{ vars.Id }} 
       - name: add node
-        uses: actions/setup-node@v1
-      - run: npm install
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+          registry-url: 'https://npm.pkg.github.com'
+          # Defaults to the user or organization that owns the workflow file
+          scope: '@sap'
+      - run: npm ci
+      - run: npm publish
       - name: mavenExecuteStaticCodeChecks
         uses: SAP/project-piper-action@master
         with:
