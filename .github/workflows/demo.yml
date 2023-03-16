@@ -31,7 +31,6 @@ jobs:
           # Defaults to the user or organization that owns the workflow file
           scope: '@sap'
       - run: npm ci
-      - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.Registry }}
       - name: mavenExecuteStaticCodeChecks
