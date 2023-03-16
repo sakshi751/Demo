@@ -26,4 +26,4 @@ jobs:
       - name: mavenExecuteStaticCodeChecks
         uses: SAP/project-piper-action@master
         with:
-          command: integrationArtifactDeploy
+          command: help
