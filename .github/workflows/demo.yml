@@ -8,7 +8,7 @@ jobs:
     permissions:
       issues: write
     steps:
-      - name: Create issue using REST APi
+      - name: Create issue using REST API
         id: myRequest
         uses: actions/checkout@v2
         with:
@@ -36,4 +36,4 @@ jobs:
       - name: mavenExecuteStaticCodeCheck
         uses: SAP/project-piper-action@master
         with:
-          command: integrationArtifactDownload --apiServiceKey ${{ secrets.san_apikey }} --integrationFlowId 'Trial_Integration_Flow' --integrationFlowVersion '1.0.0' --downloadPath './iflows'
+          command: integrationArtifactDownload --apiServiceKey ${{ secrets.san_apikey }}+'}' --integrationFlowId 'Trial_Integration_Flow' --integrationFlowVersion '1.0.0' --downloadPath './iflows'
