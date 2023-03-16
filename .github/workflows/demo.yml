@@ -36,4 +36,4 @@ jobs:
       - name: mavenExecuteStaticCodeChecks
         uses: SAP/project-piper-action@master
         with:
-          command: integrationArtifactDeploy --apiServiceKey ${{ secrets.san_apikey }}
+          command: integrationArtifactDeploy --apiServiceKey ${{ secrets.san_apikey }} --integrationFlowId 'Trial_Integration_Flow'
