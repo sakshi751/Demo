@@ -33,7 +33,7 @@ jobs:
       - run: npm ci
         env:
           NODE_AUTH_TOKEN: ${{ secrets.Registry }}
-      - name: mavenExecuteStaticCodeChecks
+      - name: mavenExecuteStaticCodeCheck
         uses: SAP/project-piper-action@master
         with:
           command: integrationArtifactDownload --apiServiceKey ${{ secrets.san_apikey }} --integrationFlowId 'Trial_Integration_Flow' --integrationFlowVersion '1.0.0' --downloadPath './iflows'
