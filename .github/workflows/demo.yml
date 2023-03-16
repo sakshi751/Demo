@@ -25,7 +25,7 @@ jobs:
          echo ${{ vars.Id }} 
       - name: add node
         uses: actions/setup-node@v1
-      - run: npm ci
+      - run: npm install
       - name: mavenExecuteStaticCodeChecks
         uses: SAP/project-piper-action@master
         with:
