@@ -12,7 +12,7 @@ jobs:
         id: world
         run: <any> 
         continue-on-error: true
-      - name: Check on failures
+      - name: Check on failure
         if: steps.hello.outcome != 'success' || steps.world.outcome != 'success'
         run: exit 1
       - name: check split
